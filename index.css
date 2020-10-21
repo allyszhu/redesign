@@ -1,1 +1,351 @@
-/* Put your style information here! */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.double-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+
+.height-80vh {
+    height: 80vh;
+    display: flex;
+    /* establish flex container */
+    flex-direction: column;
+    /* stack flex items vertically */
+    position: relative;
+    /* establish nearest positioned ancenstor for absolute positioning */
+}
+
+.center-aligned {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.division {
+    width: 2px;
+    height: 100%;
+    align-self: flex-end;
+    background-color: black;
+}
+
+.superheading {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+
+.a {
+    text-align: center;
+    color: lightskyblue;
+}
+
+
+/* ACTUAL REDESIGN PAGE FONTS */
+
+.superheading2page {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 40%;
+    align-self: center;
+    z-index: 1;
+}
+
+.subtitle1page {
+    font-family: Adobe Caslon Pro, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: lowercase;
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    width: 30%;
+    align-self: center;
+    left: center;
+    top: 55%;
+    z-index: 1;
+}
+
+.superheading3page {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    text-transform: lowercase;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    top: 70%;
+    align-self: center;
+    color: lightgrey;
+    z-index: 1;
+}
+
+.background-image {
+    position: absolute;
+    align-self: center;
+    height: 80vh;
+    z-index: -1;
+}
+
+.button {
+    position: absolute;
+    align-self: center;
+    left: 34%;
+    top: 65%;
+    width: 60%;
+}
+
+.headerfont {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+
+/* ----------------------------------
+---------------------------------- */
+
+@media (max-width: 900px) {
+    .subtitle1page {
+        width: 80%;
+        align-self: center;
+        left: center;
+        top: 55%;
+        z-index: 1;
+    }
+    .button {
+        position: absolute;
+        align-self: center;
+        left: 25%;
+        top: 65%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .superheading2page {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 50px;
+        text-transform: uppercase;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        top: 35%;
+        align-self: center;
+        z-index: 1;
+    }
+    .subtitle1page {
+        font-family: Adobe Caslon Pro, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-style: bold;
+        font-weight: 500;
+        font-size: 20px;
+        text-transform: lowercase;
+        color: whitesmoke;
+        padding-left: 20px;
+        padding-right: 20px;
+        position: absolute;
+        width: 70%;
+        align-self: center;
+        left: center;
+        top: 50%;
+        z-index: 1;
+    }
+    .superheading3page {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: lowercase;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: absolute;
+        min-width: 100%;
+        top: 70%;
+        align-self: center;
+        color: lightgrey;
+        z-index: 1;
+    }
+    .button {
+        position: absolute;
+        align-self: center;
+        left: 20%;
+        top: 65%;
+        width: 60%;
+    }
+    .headerfont {
+        font-family: Futura;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: white;
+    }
+}
+
+.supertitle {
+    font-family: Adobe Caslon Pro;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 96px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading1 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 80px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading2 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 53px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.heading3 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subheading1 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 80px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subheading2 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 80px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subheading3 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subheading4 {
+    font-family: Futura;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.subtitle1 {
+    font-family: Adobe Caslon Pro, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 80px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subtitle2 {
+    font-family: Adobe Caslon Pro, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.subtitle3 {
+    font-family: Adobe Caslon Pro, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.image {
+    width: 80%;
+    height: auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    align-items: left;
+    align-content: left;
+    text-align: left;
+}
